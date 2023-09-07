@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 14,
+    "files.associations": {
+        "sleep.h": "c",
+        "xil_printf.h": "c",
+        "xspips.h": "c",
+        "xparameters.h": "c",
+        "xgpiops.h": "c",
+        "xscugic.h": "c",
+        "xscutimer.h": "c"
+    }
+}

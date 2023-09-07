@@ -1,0 +1,32 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.5",
+   "Default View_TopLeft":"-216,-79",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port GPIO_0_0 -pg 1 -lvl 3 -x 580 -y 60 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 3 -x 580 -y 80 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 3 -x 580 -y 100 -defaultsOSRD
+preplace port port-id_SPI0_SCLK_O_0 -pg 1 -lvl 3 -x 580 -y 140 -defaultsOSRD
+preplace port port-id_SPI0_MOSI_O_0 -pg 1 -lvl 3 -x 580 -y 160 -defaultsOSRD
+preplace port port-id_SPI0_MISO_I_0 -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port port-id_ss_assert_0 -pg 1 -lvl 3 -x 580 -y 230 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 170 -y 130 -defaultsOSRD
+preplace inst assert_0 -pg 1 -lvl 2 -x 450 -y 230 -defaultsOSRD
+preplace netloc SPI0_MISO_I_0_1 1 0 2 NJ 260 320
+preplace netloc assert_0_ss_assert 1 2 1 NJ 230
+preplace netloc processing_system7_0_SPI0_MOSI_O 1 1 2 NJ 160 NJ
+preplace netloc processing_system7_0_SPI0_SCLK_O 1 1 2 340 140 NJ
+preplace netloc processing_system7_0_SPI0_SS_O 1 1 1 330 200n
+preplace netloc processing_system7_0_DDR 1 1 2 NJ 80 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 2 NJ 100 NJ
+preplace netloc processing_system7_0_GPIO_0 1 1 2 NJ 60 NJ
+levelinfo -pg 1 0 170 450 580
+pagesize -pg 1 -db -bbox -sgen -160 0 740 300
+"
+}
+{
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}

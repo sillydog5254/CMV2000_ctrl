@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="CMV2000_ctrl_system-imgFile" value="D:/Files/VivadoProjects/CMV2000_ctrl/vitis/CMV2000_ctrl_system/Debug/sd_card/BOOT.BIN"/>
+	<item key="CMV2000_ctrl_system-offSet" value=""/>
+	<item key="CMV2000_ctrl_system-initFile" value="D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/boot/fsbl.elf"/>
+	<item key="CMV2000_ctrl_system-flashType" value="qspi-x4-single"/>
+	<item key="CMV2000_ctrl_system-verifyFlash" value="false"/>
+	<item key="CMV2000_ctrl_system-blankCheck" value="false"/>
+	<item key="CMV2000_ctrl_system-device" value="Auto Detect"/>
+	<item key="CMV2000_ctrl_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="CMV2000_ctrl_system"/>
+</section>
