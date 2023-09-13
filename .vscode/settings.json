@@ -1,5 +1,4 @@
 {
-    "editor.fontSize": 14,
     "files.associations": {
         "sleep.h": "c",
         "xil_printf.h": "c",
@@ -7,6 +6,10 @@
         "xparameters.h": "c",
         "xgpiops.h": "c",
         "xscugic.h": "c",
-        "xscutimer.h": "c"
-    }
+        "xscutimer.h": "c",
+        "stdio.h": "c",
+        "string.h": "c",
+        "cstdio": "c"
+    },
+    "editor.fontSize": 14
 }
