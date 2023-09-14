@@ -67,3 +67,20 @@ timestamp=[2023-09-12 18:03:41], mode=BUILD, duration=0:00:05.026, duration_ms=5
 timestamp=[2023-09-12 18:03:53], mode=BUILD, duration=0:00:00.307, duration_ms=307, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
 timestamp=[2023-09-12 18:03:58], mode=BUILD, duration=0:00:04.725, duration_ms=4725, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
 timestamp=[2023-09-12 18:06:20], mode=APP_CREATION, duration=0:00:03.923, duration_ms=3923, data={name=xuartps_intr_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_wrapper, application_type=application}
+timestamp=[2023-09-14 08:58:02], mode=WORKBENCH_START, duration=0:00:12.883, duration_ms=12883, data={}
+timestamp=[2023-09-14 08:58:03], mode=WORKBENCH_UI_INIT, duration=0:00:00.808, duration_ms=808, data={editors_count=7, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=CMV2000_ctrl,CMV2000_ctrl_system,RemoteSystemsTempFiles,system_wrapper,xuartps_intr_example_1,xuartps_intr_example_1_system}
+timestamp=[2023-09-14 08:58:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.867, duration_ms=867, data={}
+timestamp=[2023-09-14 11:14:40], mode=PLATFORM_GENERATION, duration=0:00:02.525, duration_ms=2525, data={name=system_wrapper}
+timestamp=[2023-09-14 11:14:44], mode=BUILD, duration=0:00:02.430, duration_ms=2430, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 11:14:51], mode=BUILD, duration=0:00:06.472, duration_ms=6472, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 11:20:19], mode=BUILD, duration=0:00:00.744, duration_ms=744, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 11:20:24], mode=BUILD, duration=0:00:04.519, duration_ms=4519, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 11:34:43], mode=BUILD, duration=0:00:01.032, duration_ms=1032, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 11:34:48], mode=BUILD, duration=0:00:04.739, duration_ms=4739, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 11:46:10], mode=BUILD, duration=0:00:00.500, duration_ms=500, data={name=CMV2000_ctrl, configuration=Debug, clean_build=true}
+timestamp=[2023-09-14 11:46:11], mode=BUILD, duration=0:00:00.994, duration_ms=994, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 11:46:16], mode=BUILD, duration=0:00:05.375, duration_ms=5375, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 11:49:20], mode=BUILD, duration=0:00:00.937, duration_ms=937, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 11:49:26], mode=BUILD, duration=0:00:04.911, duration_ms=4911, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 15:35:23], mode=BUILD, duration=0:00:00.940, duration_ms=940, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 15:35:29], mode=BUILD, duration=0:00:05.398, duration_ms=5398, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}

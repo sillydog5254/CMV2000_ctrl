@@ -9,7 +9,10 @@
         "xscutimer.h": "c",
         "stdio.h": "c",
         "string.h": "c",
-        "cstdio": "c"
+        "cstdio": "c",
+        "xil_exception.h": "c",
+        "xuartps.h": "c",
+        "xuartps_hw.h": "c"
     },
-    "editor.fontSize": 14
+    "editor.fontSize": 20
 }

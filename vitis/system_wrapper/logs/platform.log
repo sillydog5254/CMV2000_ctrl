@@ -3998,3 +3998,357 @@ D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bs
 
 TRACE::2023-09-12.18:06:09::SCWMssOS::Sw design exists and opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
 TRACE::2023-09-12.18:06:09::SCWMssOS::Removing the swdes entry for  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.08:58:33::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:33::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:33::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:33::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:33::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:33::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened new HwDB with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWReader::Active system found as  system_wrapper
+TRACE::2023-09-14.08:58:35::SCWReader::Handling sysconfig system_wrapper
+TRACE::2023-09-14.08:58:35::SCWDomain::checking for install qemu data   : 
+TRACE::2023-09-14.08:58:35::SCWDomain:: Using the QEMU Data from install at  : D:/ProgramFiles/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2023-09-14.08:58:35::SCWDomain:: Using the QEMU args  from install at  : D:/ProgramFiles/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2023-09-14.08:58:35::SCWMssOS::No sw design opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::mss exists loading the mss file  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::Opened the sw design from mss  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::Adding the swdes entry D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2023-09-14.08:58:35::SCWMssOS::updating the scw layer about changes
+TRACE::2023-09-14.08:58:35::SCWMssOS::Opened the sw design.  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::DEBUG:  swdes dump  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-14.08:58:35::SCWMssOS::Sw design exists and opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS:: library already available in sw design:  xilffs:4.8
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::DEBUG:  swdes dump  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-14.08:58:35::SCWMssOS::Sw design exists and opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2023-09-14.08:58:35::SCWMssOS::Saving the mss changes D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-14.08:58:35::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-14.08:58:35::SCWMssOS::Commit changes completed.
+TRACE::2023-09-14.08:58:35::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-09-14.08:58:35::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::DEBUG:  swdes dump  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-14.08:58:35::SCWMssOS::Sw design exists and opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWReader::No isolation master present  
+TRACE::2023-09-14.08:58:35::SCWDomain::checking for install qemu data   : 
+TRACE::2023-09-14.08:58:35::SCWDomain:: Using the QEMU Data from install at  : D:/ProgramFiles/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2023-09-14.08:58:35::SCWDomain:: Using the QEMU args  from install at  : D:/ProgramFiles/Xilinx/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::DEBUG:  swdes dump  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-14.08:58:35::SCWMssOS::No sw design opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::mss exists loading the mss file  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::Opened the sw design from mss  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::Adding the swdes entry D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2023-09-14.08:58:35::SCWMssOS::updating the scw layer about changes
+TRACE::2023-09-14.08:58:35::SCWMssOS::Opened the sw design.  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::Saving the mss changes D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-14.08:58:35::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-14.08:58:35::SCWMssOS::Commit changes completed.
+TRACE::2023-09-14.08:58:35::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-09-14.08:58:35::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.08:58:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.08:58:35::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.08:58:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.08:58:35::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWMssOS::DEBUG:  swdes dump  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-14.08:58:35::SCWMssOS::Sw design exists and opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.08:58:35::SCWReader::No isolation master present  
+LOG::2023-09-14.11:14:39::SCWPlatform::Started generating the artifacts platform system_wrapper
+TRACE::2023-09-14.11:14:39::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-09-14.11:14:39::SCWPlatform::Started generating the artifacts for system configuration system_wrapper
+LOG::2023-09-14.11:14:39::SCWSystem::Checking the domain zynq_fsbl
+LOG::2023-09-14.11:14:39::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2023-09-14.11:14:39::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2023-09-14.11:14:39::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2023-09-14.11:14:39::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2023-09-14.11:14:39::SCWSystem::Not a boot domain 
+LOG::2023-09-14.11:14:39::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2023-09-14.11:14:39::SCWDomain::Generating domain artifcats
+TRACE::2023-09-14.11:14:39::SCWMssOS::Generating standalone artifcats
+TRACE::2023-09-14.11:14:39::SCWMssOS::Copying the qemu file from  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/resources/system_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt To D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/qemu/
+TRACE::2023-09-14.11:14:39::SCWMssOS::Copying the qemu file from  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/resources/system_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt To D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/qemu/
+TRACE::2023-09-14.11:14:39::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-09-14.11:14:39::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:39::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:39::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:39::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.11:14:39::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:39::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.11:14:39::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.11:14:39::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.11:14:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.11:14:39::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.11:14:39::SCWMssOS::DEBUG:  swdes dump  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-14.11:14:39::SCWMssOS::Sw design exists and opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.11:14:39::SCWMssOS::Completed writing the mss file at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-09-14.11:14:39::SCWMssOS::Mss edits present, copying mssfile into export location D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.11:14:39::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-09-14.11:14:39::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-09-14.11:14:39::SCWDomain::Skipping the build for domain :  standalone_ps7_cortexa9_0
+TRACE::2023-09-14.11:14:39::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-09-14.11:14:39::SCWMssOS::Copying to export directory.
+TRACE::2023-09-14.11:14:40::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-09-14.11:14:40::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2023-09-14.11:14:40::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2023-09-14.11:14:40::SCWSystem::Completed Processing the sysconfig system_wrapper
+LOG::2023-09-14.11:14:40::SCWPlatform::Completed generating the artifacts for system configuration system_wrapper
+TRACE::2023-09-14.11:14:40::SCWPlatform::Started preparing the platform 
+TRACE::2023-09-14.11:14:40::SCWSystem::Writing the bif file for system config system_wrapper
+TRACE::2023-09-14.11:14:40::SCWSystem::dir created 
+TRACE::2023-09-14.11:14:40::SCWSystem::Writing the bif 
+TRACE::2023-09-14.11:14:40::SCWPlatform::Started writing the spfm file 
+TRACE::2023-09-14.11:14:40::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-09-14.11:14:40::SCWPlatform::Completed generating the platform
+TRACE::2023-09-14.11:14:40::SCWMssOS::Saving the mss changes D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.11:14:40::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-14.11:14:40::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-14.11:14:40::SCWMssOS::Commit changes completed.
+TRACE::2023-09-14.11:14:40::SCWMssOS::Saving the mss changes D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.11:14:40::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-09-14.11:14:40::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-09-14.11:14:40::SCWMssOS::Commit changes completed.
+TRACE::2023-09-14.11:14:40::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.11:14:40::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.11:14:40::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.11:14:40::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.11:14:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.11:14:40::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.11:14:40::SCWMssOS::DEBUG:  swdes dump  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-14.11:14:40::SCWMssOS::Sw design exists and opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-09-14.11:14:40::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.11:14:40::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.11:14:40::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.11:14:40::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.11:14:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.11:14:40::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.11:14:40::SCWMssOS::DEBUG:  swdes dump  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-14.11:14:40::SCWMssOS::Sw design exists and opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.11:14:40::SCWWriter::formatted JSON is {
+	"platformName":	"system_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"system_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/system_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"system_wrapper",
+	"systems":	[{
+			"systemName":	"system_wrapper",
+			"systemDesc":	"system_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"system_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"5f143c39a0f9fb4386b3bb9d08f2d67b",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.8", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/system_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/system_wrapper/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"5b33e6f8e7019a31ddb896faa6757fe3",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-09-14.11:14:40::SCWPlatform::updated the xpfm file.
+TRACE::2023-09-14.11:14:40::SCWPlatform::Trying to open the hw design at D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform::DSA given D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform::DSA absoulate path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform::DSA directory D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw
+TRACE::2023-09-14.11:14:40::SCWPlatform:: Platform Path D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/hw/system_wrapper.xsa
+TRACE::2023-09-14.11:14:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-09-14.11:14:40::SCWPlatform::Trying to set the existing hwdb with name system_wrapper
+TRACE::2023-09-14.11:14:40::SCWPlatform::Opened existing hwdb system_wrapper
+TRACE::2023-09-14.11:14:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-09-14.11:14:40::SCWMssOS::Checking the sw design at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-09-14.11:14:40::SCWMssOS::DEBUG:  swdes dump  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-09-14.11:14:40::SCWMssOS::Sw design exists and opened at  D:/Files/VivadoProjects/CMV2000_ctrl/vitis/system_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss

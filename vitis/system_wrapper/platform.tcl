@@ -29,3 +29,5 @@ bsp reload
 platform generate
 platform active {system_wrapper}
 bsp reload
+platform active {system_wrapper}
+platform generate -domains 

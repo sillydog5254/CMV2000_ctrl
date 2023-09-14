@@ -21,9 +21,6 @@
 #define RUN_LED 7
 #define SYS_RES_LED 8
 
-#define SENSOR_KEY 12
-#define SYS_RES_KEY 11
-
 #define FRAME_REQ 54
 #define SYS_RES_N 55
 #define SENSOR_SWITCH 56
@@ -81,13 +78,13 @@ int main()
         return XST_FAILURE;
     }
 
-    Status = uart_init(&Uart_Ps); // 串口初始�??
+    Status = uart_init(&Uart_Ps); // 串口初始�?????
     if (Status == XST_FAILURE)
     {
         xil_printf("Uart Initial Failed\r\n");
         return XST_FAILURE;
     }
-    uart_intr_init(&Intc, &Uart_Ps); // 串口中断初始�??
+    uart_intr_init(&Intc, &Uart_Ps); // 串口中断初始�?????
 
     while (1)
     {
@@ -98,7 +95,7 @@ int main()
 
         printf("REG-127 = %#x\t", read_temperature_reg[3]);
         printf("REG-126 = %#x\n", read_temperature_reg[1]);
-        printf("Temperature = %.2lf��C", tem);
+        printf("Temperature = %.2lf��", tem);
 
         printf("\n\n");
         memset(read_temperature_reg, 0x00, 4);
@@ -158,7 +155,7 @@ int spi0_init()
     //     xil_printf("%s XSpiPs_SetDelays fail\n", __func__);
     //     return XST_FAILURE;
     // }
-
+    XSpiPs_Enable(&Spi0);
     xil_printf("spi 0 config finish\n");
     return XST_SUCCESS;
 }
@@ -182,8 +179,6 @@ int gpio0_init()
         return XST_FAILURE;
     }
 
-    XGpioPs_SetDirectionPin(&gpiops_inst, SENSOR_KEY, 0);
-    XGpioPs_SetDirectionPin(&gpiops_inst, SYS_RES_KEY, 0);
 
     XGpioPs_SetDirectionPin(&gpiops_inst, RUN_LED, 1);
     XGpioPs_SetDirectionPin(&gpiops_inst, SYS_RES_LED, 1);
@@ -246,11 +241,12 @@ void end_sequence()
     set_run_led(0);
 }
 
-// UART初始化函�??
+// UART初始化函�?????
 int uart_init(XUartPs *uart_ps)
 {
     int status;
     XUartPs_Config *uart_cfg;
+    XUartPsFormat format = {115200, XUARTPS_FORMAT_8_BITS, XUARTPS_FORMAT_NO_PARITY, XUARTPS_FORMAT_1_STOP_BIT};
 
     uart_cfg = XUartPs_LookupConfig(UART_DEVICE_ID);
     if (NULL == uart_cfg)
@@ -264,12 +260,15 @@ int uart_init(XUartPs *uart_ps)
     if (status != XST_SUCCESS)
         return XST_FAILURE;
 
+    XUartPs_EnableUart(uart_ps);
     // 设置工作模式:正常模式
     XUartPs_SetOperMode(uart_ps, XUARTPS_OPER_MODE_NORMAL);
-    // 设置波特�??:115200
-    XUartPs_SetBaudRate(uart_ps, 115200);
-    // 设置RxFIFO的中断触发等�??
+    XUartPs_SetDataFormat(uart_ps, &format);
+    // 设置波特�?????:115200
+    // XUartPs_SetBaudRate(uart_ps, 115200);
+    // 设置RxFIFO的中断触发等�?????
     XUartPs_SetFifoThreshold(uart_ps, 5);
+    XUartPs_SetInterruptMask(uart_ps, XUARTPS_IXR_RXOVR);
 
     return XST_SUCCESS;
 }
@@ -280,7 +279,7 @@ void uart_intr_handler(void *call_back_ref)
     XUartPs *uart_instance_ptr = (XUartPs *)call_back_ref;
     int index = 0;
     char rec_data[10] = "";
-    u32 isr_status; // 中断状�?�标�??
+    u32 isr_status; // 中断状�?�标�?????
 
     // 读取中断ID寄存器，判断触发的是哪种中断
     isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_IMR_OFFSET);
@@ -289,12 +288,12 @@ void uart_intr_handler(void *call_back_ref)
     // 判断中断标志位RxFIFO是否触发
     if (isr_status & (u32)XUARTPS_IXR_RXOVR)
     {
-        isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_ISR_OFFSET);
-        while ((isr_status & XUARTPS_IXR_RXEMPTY) == 0)
+        isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_SR_OFFSET);
+        while ((isr_status & XUARTPS_SR_RXEMPTY) == 0)
         {
             rec_data[index] = XUartPs_RecvByte(XPAR_PS7_UART_0_BASEADDR);
             index++;
-            isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_ISR_OFFSET);
+            isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_SR_OFFSET);
         }
         rec_data[index] = '\0';
         if (strcmp(rec_data, "start") == 0)
@@ -305,7 +304,7 @@ void uart_intr_handler(void *call_back_ref)
         {
             reset_sequence();
         }
-        else if (strcmp(rec_data, "end") == 0)
+        else if (strcmp(rec_data, "endll") == 0)
         {
             end_sequence();
         }
@@ -314,11 +313,15 @@ void uart_intr_handler(void *call_back_ref)
             printf("command fail\n");
         }
         // 清除中断标志
-        XUartPs_WriteReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_ISR_OFFSET, XUARTPS_IXR_RXOVR | XUARTPS_IXR_RXEMPTY);
+        XUartPs_WriteReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_ISR_OFFSET, XUARTPS_IXR_RXOVR);
+    }
+    else
+    {
+        printf("rxovr fail\n");
     }
 }
 
-// 串口中断初始�??
+// 串口中断初始�?????
 int uart_intr_init(XScuGic *intc, XUartPs *uart_ps)
 {
     int status;
@@ -331,18 +334,17 @@ int uart_intr_init(XScuGic *intc, XUartPs *uart_ps)
     if (status != XST_SUCCESS)
         return XST_FAILURE;
 
-    // 设置并打�??中断异常处理功能
+    // 设置并打�?????中断异常处理功能
     Xil_ExceptionInit();
     Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
                                  (void *)intc);
     Xil_ExceptionEnable();
 
-    // 为中断设置中断处理函�??
+    // 为中断设置中断处理函�?????
     XScuGic_Connect(intc, UART_INT_IRQ_ID,
                     (Xil_ExceptionHandler)uart_intr_handler, (void *)uart_ps);
-    // 设置UART的中断触发方�??
-    XUartPs_SetInterruptMask(uart_ps, XUARTPS_IXR_RXOVR);
+    // 设置UART的中断触发方�?????
     // 使能GIC中的串口中断
     XScuGic_Enable(intc, UART_INT_IRQ_ID);
     return XST_SUCCESS;
