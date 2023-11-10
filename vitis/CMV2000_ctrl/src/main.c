@@ -10,14 +10,14 @@
 #include "xil_printf.h"
 #include "sleep.h"
 
-// 设备ID
+// 器件ID
 #define GPIOPS_ID XPAR_XGPIOPS_0_DEVICE_ID
 #define SPIPS_ID XPAR_XSPIPS_0_DEVICE_ID
 #define UART_DEVICE_ID XPAR_PS7_UART_0_DEVICE_ID
 #define INTC_DEVICE_ID XPAR_SCUGIC_SINGLE_DEVICE_ID
 #define UART_INT_IRQ_ID XPAR_XUARTPS_0_INTR
 
-// GPIOPS的引脚号
+// GPIOPS鐨勫紩鑴氬彿
 #define RUN_LED 7
 #define SYS_RES_LED 8
 
@@ -29,7 +29,7 @@
 #define OFFSET 1000.0 * F / 40.0
 #define SLOPE 12.0 / F
 
-// 设置控制信号
+// 璁剧疆鎺у埗淇″彿
 #define set_frame_req(x) XGpioPs_WritePin(&gpiops_inst, FRAME_REQ, x)
 #define set_sys_res_n(x) XGpioPs_WritePin(&gpiops_inst, SYS_RES_N, x)
 #define set_run_led(x) XGpioPs_WritePin(&gpiops_inst, RUN_LED, x)
@@ -78,13 +78,13 @@ int main()
         return XST_FAILURE;
     }
 
-    Status = uart_init(&Uart_Ps); // 串口初始�?????
+    Status = uart_init(&Uart_Ps); // 涓插彛鍒濆锟�?????
     if (Status == XST_FAILURE)
     {
         xil_printf("Uart Initial Failed\r\n");
         return XST_FAILURE;
     }
-    uart_intr_init(&Intc, &Uart_Ps); // 串口中断初始�?????
+    uart_intr_init(&Intc, &Uart_Ps); // 涓插彛涓柇鍒濆锟�????????
 
     while (1)
     {
@@ -93,12 +93,11 @@ int main()
 
         double tem = (read_temperature_reg[3] * 256 + read_temperature_reg[1] - OFFSET) * SLOPE;
 
-        printf("REG-127 = %#x\t", read_temperature_reg[3]);
-        printf("REG-126 = %#x\n", read_temperature_reg[1]);
+        printf("REG-127 = %#X\t", read_temperature_reg[3]);
+        printf("REG-126 = %#X\n", read_temperature_reg[1]);
         printf("Temperature = %.2lf��", tem);
-
         printf("\n\n");
-        memset(read_temperature_reg, 0x00, 4);
+        memset(read_temperature_reg, 0X00, 4);
         sleep(5);
     }
 
@@ -179,7 +178,6 @@ int gpio0_init()
         return XST_FAILURE;
     }
 
-
     XGpioPs_SetDirectionPin(&gpiops_inst, RUN_LED, 1);
     XGpioPs_SetDirectionPin(&gpiops_inst, SYS_RES_LED, 1);
     XGpioPs_SetDirectionPin(&gpiops_inst, FRAME_REQ, 1);
@@ -241,7 +239,7 @@ void end_sequence()
     set_run_led(0);
 }
 
-// UART初始化函�?????
+// UART鍒濆鍖栧嚱锟�?????
 int uart_init(XUartPs *uart_ps)
 {
     int status;
@@ -255,37 +253,37 @@ int uart_init(XUartPs *uart_ps)
     if (status != XST_SUCCESS)
         return XST_FAILURE;
 
-    // UART设备自检
+    // UART璁惧鑷
     status = XUartPs_SelfTest(uart_ps);
     if (status != XST_SUCCESS)
         return XST_FAILURE;
 
     XUartPs_EnableUart(uart_ps);
-    // 设置工作模式:正常模式
+    // 璁剧疆宸ヤ綔妯″紡:姝ｅ父妯″紡
     XUartPs_SetOperMode(uart_ps, XUARTPS_OPER_MODE_NORMAL);
     XUartPs_SetDataFormat(uart_ps, &format);
-    // 设置波特�?????:115200
+    // 璁剧疆娉㈢壒锟�?????:115200
     // XUartPs_SetBaudRate(uart_ps, 115200);
-    // 设置RxFIFO的中断触发等�?????
+    // 璁剧疆RxFIFO鐨勪腑鏂Е鍙戠瓑锟�?????
     XUartPs_SetFifoThreshold(uart_ps, 5);
     XUartPs_SetInterruptMask(uart_ps, XUARTPS_IXR_RXOVR);
 
     return XST_SUCCESS;
 }
 
-// UART中断处理函数
+// UART涓柇澶勭悊鍑芥�???
 void uart_intr_handler(void *call_back_ref)
 {
     XUartPs *uart_instance_ptr = (XUartPs *)call_back_ref;
     int index = 0;
     char rec_data[10] = "";
-    u32 isr_status; // 中断状�?�标�?????
+    u32 isr_status; // 涓柇鐘讹拷?锟芥爣锟�????????
 
-    // 读取中断ID寄存器，判断触发的是哪种中断
+    // 璇诲彇涓柇ID瀵勫瓨鍣紝鍒ゆ柇瑙﹀彂鐨勬槸鍝涓柇
     isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_IMR_OFFSET);
     isr_status &= XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_ISR_OFFSET);
 
-    // 判断中断标志位RxFIFO是否触发
+    // 鍒ゆ柇涓柇鏍囧織浣峈xFIFO鏄惁瑙﹀�???
     if (isr_status & (u32)XUARTPS_IXR_RXOVR)
     {
         isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_SR_OFFSET);
@@ -295,7 +293,7 @@ void uart_intr_handler(void *call_back_ref)
             index++;
             isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_SR_OFFSET);
         }
-        rec_data[index] = '\0';
+        // rec_data[index] = '\0';
         if (strcmp(rec_data, "start") == 0)
         {
             start_up_sequence();
@@ -312,7 +310,7 @@ void uart_intr_handler(void *call_back_ref)
         {
             printf("command fail\n");
         }
-        // 清除中断标志
+        // 娓呴櫎涓柇鏍囧�???
         XUartPs_WriteReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_ISR_OFFSET, XUARTPS_IXR_RXOVR);
     }
     else
@@ -321,11 +319,11 @@ void uart_intr_handler(void *call_back_ref)
     }
 }
 
-// 串口中断初始�?????
+// 涓插彛涓柇鍒濆锟�????????
 int uart_intr_init(XScuGic *intc, XUartPs *uart_ps)
 {
     int status;
-    // 初始化中断控制器
+    // 鍒濆鍖栦腑鏂帶鍒跺櫒
     XScuGic_Config *intc_cfg;
     intc_cfg = XScuGic_LookupConfig(INTC_DEVICE_ID);
     if (NULL == intc_cfg)
@@ -334,18 +332,18 @@ int uart_intr_init(XScuGic *intc, XUartPs *uart_ps)
     if (status != XST_SUCCESS)
         return XST_FAILURE;
 
-    // 设置并打�?????中断异常处理功能
+    // 璁剧疆骞舵墦锟�?????涓柇寮傚父澶勭悊鍔熻兘
     Xil_ExceptionInit();
     Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
                                  (void *)intc);
     Xil_ExceptionEnable();
 
-    // 为中断设置中断处理函�?????
+    // 涓轰腑鏂缃腑鏂鐞嗗嚱锟�????????
     XScuGic_Connect(intc, UART_INT_IRQ_ID,
                     (Xil_ExceptionHandler)uart_intr_handler, (void *)uart_ps);
-    // 设置UART的中断触发方�?????
-    // 使能GIC中的串口中断
+    // 璁剧疆UART鐨勪腑鏂Е鍙戞柟锟�?????
+    // 浣胯兘GIC涓殑涓插彛涓�???
     XScuGic_Enable(intc, UART_INT_IRQ_ID);
     return XST_SUCCESS;
 }

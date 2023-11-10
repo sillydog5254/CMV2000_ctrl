@@ -84,3 +84,55 @@ timestamp=[2023-09-14 11:49:20], mode=BUILD, duration=0:00:00.937, duration_ms=9
 timestamp=[2023-09-14 11:49:26], mode=BUILD, duration=0:00:04.911, duration_ms=4911, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
 timestamp=[2023-09-14 15:35:23], mode=BUILD, duration=0:00:00.940, duration_ms=940, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
 timestamp=[2023-09-14 15:35:29], mode=BUILD, duration=0:00:05.398, duration_ms=5398, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 16:47:58], mode=WORKBENCH_START, duration=0:00:06.215, duration_ms=6215, data={}
+timestamp=[2023-09-14 16:47:59], mode=WORKBENCH_UI_INIT, duration=0:00:01.109, duration_ms=1109, data={editors_count=3, platform_editors_count=0, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=CMV2000_ctrl,CMV2000_ctrl_system,RemoteSystemsTempFiles,system_wrapper,xuartps_intr_example_1,xuartps_intr_example_1_system}
+timestamp=[2023-09-14 16:48:00], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.785, duration_ms=785, data={}
+timestamp=[2023-09-14 16:52:23], mode=BUILD, duration=0:00:00.885, duration_ms=885, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 16:52:28], mode=BUILD, duration=0:00:04.957, duration_ms=4957, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 16:54:25], mode=BUILD, duration=0:00:00.889, duration_ms=889, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 16:54:27], mode=BUILD, duration=0:00:00.332, duration_ms=332, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-09-14 16:54:32], mode=BUILD, duration=0:00:04.682, duration_ms=4682, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-10-12 14:50:50], mode=WORKBENCH_START, duration=0:00:18.661, duration_ms=18661, data={}
+timestamp=[2023-10-12 14:50:51], mode=WORKBENCH_UI_INIT, duration=0:00:00.731, duration_ms=731, data={editors_count=3, platform_editors_count=0, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=CMV2000_ctrl,CMV2000_ctrl_system,RemoteSystemsTempFiles,system_wrapper,xuartps_intr_example_1,xuartps_intr_example_1_system}
+timestamp=[2023-10-12 14:50:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.764, duration_ms=764, data={}
+timestamp=[2023-10-13 16:11:23], mode=WORKBENCH_START, duration=0:00:06.086, duration_ms=6086, data={}
+timestamp=[2023-10-13 16:11:24], mode=WORKBENCH_UI_INIT, duration=0:00:00.705, duration_ms=705, data={editors_count=4, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=true, projects=CMV2000_ctrl,CMV2000_ctrl_system,RemoteSystemsTempFiles,system_wrapper,xuartps_intr_example_1,xuartps_intr_example_1_system}
+timestamp=[2023-10-13 16:11:26], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.777, duration_ms=777, data={}
+timestamp=[2023-10-13 16:19:40], mode=WORKBENCH_START, duration=0:00:06.056, duration_ms=6056, data={}
+timestamp=[2023-10-13 16:19:40], mode=WORKBENCH_UI_INIT, duration=0:00:00.668, duration_ms=668, data={editors_count=4, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=CMV2000_ctrl,CMV2000_ctrl_system,RemoteSystemsTempFiles,system_wrapper,xuartps_intr_example_1,xuartps_intr_example_1_system}
+timestamp=[2023-10-13 16:19:42], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.700, duration_ms=700, data={}
+timestamp=[2023-10-13 16:37:39], mode=PLATFORM_GENERATION, duration=0:00:14.018, duration_ms=14018, data={name=system_wrapper}
+timestamp=[2023-10-13 16:37:42], mode=BUILD, duration=0:00:02.408, duration_ms=2408, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-10-13 16:41:27], mode=BUILD, duration=0:00:00.955, duration_ms=955, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-10-13 16:41:36], mode=BUILD, duration=0:00:08.144, duration_ms=8144, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-10-13 16:43:51], mode=BUILD, duration=0:00:00.328, duration_ms=328, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-10-13 16:43:56], mode=BUILD, duration=0:00:04.678, duration_ms=4678, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-10-13 17:04:33], mode=BUILD, duration=0:00:00.899, duration_ms=899, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-10-13 17:04:39], mode=BUILD, duration=0:00:05.329, duration_ms=5329, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-10-17 22:04:41], mode=WORKBENCH_START, duration=0:00:04.971, duration_ms=4971, data={}
+timestamp=[2023-10-17 22:04:42], mode=WORKBENCH_UI_INIT, duration=0:00:00.594, duration_ms=594, data={editors_count=4, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=CMV2000_ctrl,CMV2000_ctrl_system,RemoteSystemsTempFiles,system_wrapper,xuartps_intr_example_1,xuartps_intr_example_1_system}
+timestamp=[2023-10-17 22:04:43], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.660, duration_ms=660, data={}
+timestamp=[2023-10-17 22:24:55], mode=WORKBENCH_START, duration=0:00:04.782, duration_ms=4782, data={}
+timestamp=[2023-10-17 22:24:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.565, duration_ms=565, data={editors_count=4, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=CMV2000_ctrl,CMV2000_ctrl_system,RemoteSystemsTempFiles,system_wrapper,xuartps_intr_example_1,xuartps_intr_example_1_system}
+timestamp=[2023-10-17 22:24:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.636, duration_ms=636, data={}
+timestamp=[2023-11-10 14:34:24], mode=WORKBENCH_START, duration=0:00:26.952, duration_ms=26952, data={}
+timestamp=[2023-11-10 14:34:27], mode=WORKBENCH_UI_INIT, duration=0:00:02.396, duration_ms=2396, data={editors_count=4, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=CMV2000_ctrl,CMV2000_ctrl_system,RemoteSystemsTempFiles,system_wrapper,xuartps_intr_example_1,xuartps_intr_example_1_system}
+timestamp=[2023-11-10 14:34:28], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.596, duration_ms=2596, data={}
+timestamp=[2023-11-10 15:07:11], mode=PLATFORM_GENERATION, duration=0:00:14.721, duration_ms=14721, data={name=system_wrapper}
+timestamp=[2023-11-10 15:07:15], mode=BUILD, duration=0:00:02.699, duration_ms=2699, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:17:44], mode=BUILD, duration=0:00:00.404, duration_ms=404, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:17:54], mode=BUILD, duration=0:00:00.296, duration_ms=296, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:18:02], mode=BUILD, duration=0:00:07.526, duration_ms=7526, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:18:06], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:18:10], mode=BUILD, duration=0:00:04.234, duration_ms=4234, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:18:39], mode=BUILD, duration=0:00:00.380, duration_ms=380, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:18:44], mode=BUILD, duration=0:00:04.459, duration_ms=4459, data={name=CMV2000_ctrl_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:21:22], mode=BUILD, duration=0:00:00.390, duration_ms=390, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:22:39], mode=WORKBENCH_START, duration=0:00:05.373, duration_ms=5373, data={}
+timestamp=[2023-11-10 15:22:39], mode=WORKBENCH_UI_INIT, duration=0:00:00.790, duration_ms=790, data={editors_count=4, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=CMV2000_ctrl,CMV2000_ctrl_system,RemoteSystemsTempFiles,system_wrapper,xuartps_intr_example_1,xuartps_intr_example_1_system}
+timestamp=[2023-11-10 15:22:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.746, duration_ms=746, data={}
+timestamp=[2023-11-10 15:23:28], mode=BUILD, duration=0:00:00.582, duration_ms=582, data={name=CMV2000_ctrl, configuration=Debug, clean_build=true}
+timestamp=[2023-11-10 15:23:30], mode=BUILD, duration=0:00:00.799, duration_ms=799, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:33:31], mode=PLATFORM_GENERATION, duration=0:00:02.790, duration_ms=2790, data={name=system_wrapper}
+timestamp=[2023-11-10 15:33:33], mode=BUILD, duration=0:00:01.207, duration_ms=1207, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 15:44:50], mode=BUILD, duration=0:00:00.935, duration_ms=935, data={name=CMV2000_ctrl, configuration=Debug, clean_build=false}

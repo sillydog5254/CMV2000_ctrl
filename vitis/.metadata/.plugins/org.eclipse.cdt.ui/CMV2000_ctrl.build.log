@@ -1,4 +1,4 @@
-15:35:22 **** Incremental Build of configuration Debug for project CMV2000_ctrl ****
+15:44:49 **** Incremental Build of configuration Debug for project CMV2000_ctrl ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -21,5 +21,5 @@ arm-none-eabi-size CMV2000_ctrl.elf  |tee "CMV2000_ctrl.elf.size"
 'Finished building: CMV2000_ctrl.elf.size'
 ' '
 
-15:35:23 Build Finished (took 919ms)
+15:44:50 Build Finished (took 924ms)
 

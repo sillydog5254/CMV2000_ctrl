@@ -31,3 +31,13 @@ platform active {system_wrapper}
 bsp reload
 platform active {system_wrapper}
 platform generate -domains 
+platform active {system_wrapper}
+domain active {zynq_fsbl}
+bsp reload
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+platform active {system_wrapper}
+platform generate
+platform generate
+platform active {system_wrapper}
+platform generate -domains 
