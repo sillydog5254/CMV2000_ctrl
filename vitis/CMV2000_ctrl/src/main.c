@@ -10,14 +10,14 @@
 #include "xil_printf.h"
 #include "sleep.h"
 
-// 器件ID
+// �豸ID
 #define GPIOPS_ID XPAR_XGPIOPS_0_DEVICE_ID
 #define SPIPS_ID XPAR_XSPIPS_0_DEVICE_ID
 #define UART_DEVICE_ID XPAR_PS7_UART_0_DEVICE_ID
 #define INTC_DEVICE_ID XPAR_SCUGIC_SINGLE_DEVICE_ID
 #define UART_INT_IRQ_ID XPAR_XUARTPS_0_INTR
 
-// GPIOPS鐨勫紩鑴氬彿
+// GPIOPS�����ź�
 #define RUN_LED 7
 #define SYS_RES_LED 8
 
@@ -29,7 +29,7 @@
 #define OFFSET 1000.0 * F / 40.0
 #define SLOPE 12.0 / F
 
-// 璁剧疆鎺у埗淇″彿
+// ���ÿ����ź�
 #define set_frame_req(x) XGpioPs_WritePin(&gpiops_inst, FRAME_REQ, x)
 #define set_sys_res_n(x) XGpioPs_WritePin(&gpiops_inst, SYS_RES_N, x)
 #define set_run_led(x) XGpioPs_WritePin(&gpiops_inst, RUN_LED, x)
@@ -78,13 +78,13 @@ int main()
         return XST_FAILURE;
     }
 
-    Status = uart_init(&Uart_Ps); // 涓插彛鍒濆锟�?????
+    Status = uart_init(&Uart_Ps); // ���ڳ�ʼ��
     if (Status == XST_FAILURE)
     {
         xil_printf("Uart Initial Failed\r\n");
         return XST_FAILURE;
     }
-    uart_intr_init(&Intc, &Uart_Ps); // 涓插彛涓柇鍒濆锟�????????
+    uart_intr_init(&Intc, &Uart_Ps); // �����жϳ�ʼ��
 
     while (1)
     {
@@ -239,7 +239,7 @@ void end_sequence()
     set_run_led(0);
 }
 
-// UART鍒濆鍖栧嚱锟�?????
+// UART��ʼ������
 int uart_init(XUartPs *uart_ps)
 {
     int status;
@@ -253,37 +253,37 @@ int uart_init(XUartPs *uart_ps)
     if (status != XST_SUCCESS)
         return XST_FAILURE;
 
-    // UART璁惧鑷
+    // UART�豸�Լ�
     status = XUartPs_SelfTest(uart_ps);
     if (status != XST_SUCCESS)
         return XST_FAILURE;
 
     XUartPs_EnableUart(uart_ps);
-    // 璁剧疆宸ヤ綔妯″紡:姝ｅ父妯″紡
+    // ���ù���ģʽ:����ģʽ
     XUartPs_SetOperMode(uart_ps, XUARTPS_OPER_MODE_NORMAL);
     XUartPs_SetDataFormat(uart_ps, &format);
-    // 璁剧疆娉㈢壒锟�?????:115200
+    // ���ò�����:115200
     // XUartPs_SetBaudRate(uart_ps, 115200);
-    // 璁剧疆RxFIFO鐨勪腑鏂Е鍙戠瓑锟�?????
+    // ����RxFIFO���жϴ����ȼ�
     XUartPs_SetFifoThreshold(uart_ps, 5);
     XUartPs_SetInterruptMask(uart_ps, XUARTPS_IXR_RXOVR);
 
     return XST_SUCCESS;
 }
 
-// UART涓柇澶勭悊鍑芥�???
+// UART�жϴ�������
 void uart_intr_handler(void *call_back_ref)
 {
     XUartPs *uart_instance_ptr = (XUartPs *)call_back_ref;
     int index = 0;
     char rec_data[10] = "";
-    u32 isr_status; // 涓柇鐘讹拷?锟芥爣锟�????????
+    u32 isr_status; // �ж�״̬���
 
-    // 璇诲彇涓柇ID瀵勫瓨鍣紝鍒ゆ柇瑙﹀彂鐨勬槸鍝涓柇
+    // ��ȡ�ж�ID�Ĵ������жϴ������������ж�
     isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_IMR_OFFSET);
     isr_status &= XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_ISR_OFFSET);
 
-    // 鍒ゆ柇涓柇鏍囧織浣峈xFIFO鏄惁瑙﹀�???
+    // �ж��жϱ�־λRxFIFO�Ƿ񴥷�
     if (isr_status & (u32)XUARTPS_IXR_RXOVR)
     {
         isr_status = XUartPs_ReadReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_SR_OFFSET);
@@ -310,7 +310,7 @@ void uart_intr_handler(void *call_back_ref)
         {
             printf("command fail\n");
         }
-        // 娓呴櫎涓柇鏍囧�???
+        // ����жϱ�־
         XUartPs_WriteReg(uart_instance_ptr->Config.BaseAddress, XUARTPS_ISR_OFFSET, XUARTPS_IXR_RXOVR);
     }
     else
@@ -319,11 +319,11 @@ void uart_intr_handler(void *call_back_ref)
     }
 }
 
-// 涓插彛涓柇鍒濆锟�????????
+// �����жϳ�ʼ��
 int uart_intr_init(XScuGic *intc, XUartPs *uart_ps)
 {
     int status;
-    // 鍒濆鍖栦腑鏂帶鍒跺櫒
+    // ��ʼ���жϿ�����
     XScuGic_Config *intc_cfg;
     intc_cfg = XScuGic_LookupConfig(INTC_DEVICE_ID);
     if (NULL == intc_cfg)
@@ -332,18 +332,18 @@ int uart_intr_init(XScuGic *intc, XUartPs *uart_ps)
     if (status != XST_SUCCESS)
         return XST_FAILURE;
 
-    // 璁剧疆骞舵墦锟�?????涓柇寮傚父澶勭悊鍔熻兘
+    // ���ò����ж��쳣��������
     Xil_ExceptionInit();
     Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
                                  (void *)intc);
     Xil_ExceptionEnable();
 
-    // 涓轰腑鏂缃腑鏂鐞嗗嚱锟�????????
+    // Ϊ�ж������жϴ�������
     XScuGic_Connect(intc, UART_INT_IRQ_ID,
                     (Xil_ExceptionHandler)uart_intr_handler, (void *)uart_ps);
-    // 璁剧疆UART鐨勪腑鏂Е鍙戞柟锟�?????
-    // 浣胯兘GIC涓殑涓插彛涓�???
+    // ����UART���жϴ�����ʽ
+    // ʹ��GIC�еĴ����ж�
     XScuGic_Enable(intc, UART_INT_IRQ_ID);
     return XST_SUCCESS;
 }
